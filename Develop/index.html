@@ -20,12 +20,16 @@
           <textarea
             readonly
             id="password"
+            type="text"
+            min="8"
+            max="25"
             placeholder="Your Secure Password"
             aria-label="Generated Password"
           ></textarea>
         </div>
         <div class="card-footer">
-          <button id="generate" class="btn">Generate Password</button>
+          <button onclick id="generate()" class="btn">Generate Password</button>
+          <button onclick id="generate()" class="btn">Copy to Clipboard</button>
         </div>
       </div>
     </div>
