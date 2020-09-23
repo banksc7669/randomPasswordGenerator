@@ -1,31 +1,31 @@
+  // Assignment Code
+  var generateBtn = document.getElementById("generateBtn");
+
 // generate random password
 function writePassword(){
+  console.log("testing for progress")
 
-  // Assignment Code
-  var generateBtn = document.getElementById("#btn").value;
-  
   // Write password to the #password input
   var values = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*=-_";
   var password = "";
   
-  // Add event listener to generate button
-  document.getElementById("generateBtn").addEventListener("click", writePassword);
 
-  function writepassword() {
-    document.getElementById("generate").ivalue = password;
+  function writePassword(){
+    document.getElementById("generate").value = password;
   }
 
   //create for loop to choose password characters
-  for(var i = 0; i <= generateBtn; i++){
+  for(var i = 0; i <= 10; i++){
     password = password + values.charAt(Math.floor(Math.random() * Math.floor(values.length - 1)));
   }
-  return password;
+ console.log(password)
   
   // add password to display area
-  var password = Password();
-  document.getElementById("textarea#password").value = password;
+  document.getElementById("password").value = password;
   
   }
   
+  // Add event listener to generate button
+  generateBtn.addEventListener("click", writePassword);
 
-  console.log("testing for progress")
+  
