@@ -9,9 +9,12 @@ function writePassword(){
   var password = "";
   
   // Add event listener to generate button
-  generateBtn.addEventListener("click", writePassword);
+  document.getElementById("generateBtn").addEventListener("click", writePassword);
 
-  
+  function writepassword() {
+    document.getElementById("generate").ivalue = password;
+  }
+
   //create for loop to choose password characters
   for(var i = 0; i <= generateBtn; i++){
     password = password + values.charAt(Math.floor(Math.random() * Math.floor(values.length - 1)));
